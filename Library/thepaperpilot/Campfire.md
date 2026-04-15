@@ -74,7 +74,10 @@ If you need to make a campfire item do something when the main button is pressed
 
 I've created a handful of integrations for services I personally use:
 
-TODO
+[[Library/thepaperpilot/Campfire/Twitch]]
+[[Library/thepaperpilot/Campfire/Wallabag]]
+[[Library/thepaperpilot/Campfire/Miniflux]]
+[[Library/thepaperpilot/Campfire/Grafana]]
 
 ## Refreshing data
 
