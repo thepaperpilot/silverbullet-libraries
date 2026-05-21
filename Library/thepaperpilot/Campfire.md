@@ -7,7 +7,7 @@ files:
 - Campfire/Grafana.md
 - Campfire/Twitch.md
 ---
-Campfire is a library for showing rows of buttons that represent ongoing discussions or other events, without unread counts or backlogs that make keeping up with things seem like a chore. Partially inspired by the campfire idea proposed in Terry Godier’s [Phatom Obligation](https://www.terrygodier.com/phantom-obligation).
+Campfire is a library for showing rows of buttons that represent ongoing discussions or other events, without unread counts or backlogs that make keeping up with things seem like a chore. Partially inspired by the campfire idea proposed in Terry Godier’s [Phantom Obligation](https://www.terrygodier.com/phantom-obligation).
 
 The data will be saved to a page so widgets can be re-rendered without making new network requests each time. It’s currently set to ${widget.html(dom.a { class = "sb-wiki-link", href = config.get("campfire.dataPage"), config.get("campfire.dataPage") })} but you can override it by setting a config like this:
 
@@ -250,7 +250,7 @@ function campfire.rerender()
   sync.performFileSync(page .. ".md")
   mq.awaitEmptyQueue("indexQueue")
   -- then re-render
-  editor.rebuildEditorState()
+  codeWidget.refreshAll()
 end
 
 -- REPLACES all campfire items with the specified items
