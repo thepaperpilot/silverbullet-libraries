@@ -252,7 +252,7 @@ if config.get("miniflux.baseUrl") and
 
       local failingFeeds = miniflux.get_failing_feeds()
       for i, feed in ipairs(failingFeeds) do
-        local icon = "https://www.google.com/s2/favicons?domain=" .. feed.site_url
+        local icon = "https://www.google.com/s2/favicons?sz=64&domain=" .. feed.site_url
         table.insert(items, {
           description = feed.parsing_error_message,
           href = baseUrl .. "/feed/" .. feed.id .. "/edit",
