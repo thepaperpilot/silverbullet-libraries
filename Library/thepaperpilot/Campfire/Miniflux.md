@@ -230,7 +230,7 @@ if config.get("miniflux.baseUrl") and
         end
 
         -- miniflux.get_icon can often get icons for feeds, but those are served as very very long URIs
-        local icon = "https://www.google.com/s2/favicons?domain=" .. entry.url
+        local icon = "https://www.google.com/s2/favicons?sz=64&domain=" .. entry.url
         
         local description = entry.feed.title .. "\n"
         if entry._is_thread and #entry._group > 1 then
