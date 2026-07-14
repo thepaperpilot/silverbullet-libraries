@@ -22,6 +22,7 @@ local function renderCopyOnClick(body)
     class = "copy-on-click",
     onclick = function()
       js.window.navigator.clipboard.writeText(body)
+      
     end,
     body
   }
